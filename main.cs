@@ -18,11 +18,12 @@ class MainClass{
         conta.addMail("erickdavi@gmail.com");
         conta.addMail("marlonferrari@ucl.br");
         conta.addMail("contoso@outlook.com");
+        conta.addMail("abner_davi@ucl.br");
+        conta.addMail("erickdavi@gmail.com");
         
-        Console.WriteLine("nome: {0}", conta.getNome());
-        Console.WriteLine("{0}% usado", assist.getStorageUse(conta.getStorage(),conta.getQtdEmls()));
-        
+        Console.WriteLine("\nNome: {0} | Endereco: {1}", conta.getNome(), conta.getEndereco());
         Console.WriteLine("Há {0} emails prioritarios em sua caixa", assist.getQtdPrioritario(emailPrioritario,conta.GetList()));
-
+        Console.WriteLine("Armazenamento: {0}% usado de {1} GB", assist.getStorageUse(conta.getStorage(),conta.getQtdEmls()),conta.getStorage());
+        
     }
 }

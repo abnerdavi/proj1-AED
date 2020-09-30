@@ -9,10 +9,7 @@ class mail_functions{
   }
 
   public int getQtdPrioritario(string prioridade, List<string> mailBox){
-
-    int qtd = mailBox.Count(x => x.Contains(prioridade));
-
-    return qtd;
+    return (mailBox.Count(x => x.Contains(prioridade)));
   }
-
+  
 }
